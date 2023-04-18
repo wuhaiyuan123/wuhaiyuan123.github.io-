@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Momoagent四月モニター募集中</title>
+	<style type="text/css">
+		body {
+			background-color: pink;
+		}
+		h1 {
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.container img {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			margin: 10px;
+			cursor: pointer;
+		}
+		.modal {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 10px;
+			padding: 20px;
+			display: none;
+			z-index: 999;
+		}
+		.modal-content {
+			background-color: white;
+			border-radius: 10px;
+			padding: 20px;
+		}
+		.close {
+			color: white;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Momoagent四月モニター募集中</h1>
+	<div class="container">
+		<img src="https://www.dropbox.com/s/boau3bs7cucuf48/1%20.jpg?raw=1" onclick="openModal('一点集中+25000回/分刺激+５×５種振動強度+3種吸引')" />
+		<img src="https://www.dropbox.com/s/z8cbplk7ku3z6sv/2.jpg?raw=1" onclick="openModal('クリ吸引＋Ｇスポットたたき＋振動＋42℃加熱')" />
+		<img src="https://www.dropbox.com/s/6vg13gxiqfa4753/3.jpg?raw=1" onclick="openModal('クリ吸引＋Ｇスポットたたき＋振動＋42℃加熱')" />
+		<img src="https://www.dropbox.com/s/clj6z04lvdgpdsf/4.jpg?raw=1" onclick="openModal('10種類のクンニモード＋10種類の吸引モード')" />
+		<img src="https://www.dropbox.com/s/rms7t5qpsyo8uet/5.jpg?raw=1" onclick="openModal('スマホ接続＆アプリ操作＆２点責め')" />
+		<img src="https://www.dropbox.com/s/2qdjx9u8fjyu6uf/6.jpg?raw=1" onclick="openModal('パワフル二つのモーターは1種暴発振動+10種衝撃波振動')" />
+		<img src="https://www.dropbox.com/s/jpmdnmvzeneycbv/7.jpg?raw=1" onclick="openModal('サイズ・重さが3種類49g，75g，95g。3段階鍛練の骨盤底筋の収縮運動を通して、出産後の締まり、湯漏れ対策など問題について、きっと役に立つことができます。')" />
+		<img src="https://www.dropbox.com/s/857afvingxec94w/8.jpg?raw=1" onclick="openModal('25種類の振動モード×静音設計')" />
+		<img src="https://www.dropbox.com/s/3rus1rks9z6h6qg/9.jpg?raw=1" onclick="openModal('300ML大容量 日本製 (水溶性) 国際FDA認証済み')" />
+		<img src="https://www.dropbox.com/s/kdlj9u20dvuwx26/10.jpg?raw=1" onclick="openModal('一台３役の中イキ・クリイキ吸引バイブ・静音設計・10種類の振動パターン・10種類の吸引パターン＆加熱搭載の多機能吸引バイブが登場')" />
+		<img src="https://www.dropbox.com/s/xy7t7ehxenre1ob/11.jpg?raw=1" onclick="openModal('電気パルス+30°指型設計＆25種類の多彩な振動+超静音＆高品質シリコン+完全防水【2980円】')" />
+		<img src="https://www.dropbox.com/s/ixzy49pxng3d2li/12.jpg?raw=1" onclick="openModal('クンニ吸引＋電磁ピストン＋パルス振動＋42℃加熱　一台四役 A.U.C.G多点攻め【3480円】')" />
+		<img src="https://www.dropbox.com/s/xubjxumkee1x6i2/13.jpg?raw=1" onclick="openModal('クンニ吸引＋電磁ピストン＋パルス振動＋42℃加熱　一台四役 4点攻め【3090円】')" />
+		<img src="https://www.dropbox.com/s/5f9zubzttll74bt/14.jpg?raw=1" onclick="openModal('5×5種強力パルス振動+ワイヤレス；クリトリス＆Ｇスポット＆ポルチオ同時刺激【2980円】')" />
+		<img src="https://www.dropbox.com/s/53sftwh5dg0eyfa/15.jpg?raw=1" onclick="openModal('クンニ吸引×10+パルス振動×10+ペロ舐め×10；一台3役　クリトリス＆Ｇスポット刺激【2980円】')" />
+		<img src="https://www.dropbox.com/s/ihsxfbheibu25i0/16.jpg?raw=1" onclick="openModal('3種類定番振動+7種類インバーター振動振動モード、5種類リズム吸引モード、5種類ビリビリタッピングモードが搭載されました。自由に調整できます。【4690円】')" />
+		<img src="https://www.dropbox.com/s/y59mlmejcol60km/17.jpg?raw=1" onclick="openModal('10種類強力振動+10種類舌舐め+40℃加熱機能+静音設計【3080円】')" />
+		<img src="https://www.dropbox.com/s/fawox444zbygmjm/18.jpg?raw=1" onclick="openModal('18')" />
+		<img src="https://www.dropbox.com/s/dpvxn3yuqdl16fc/19.jpg?raw=1" onclick="openModal('一点集中刺激·昇天必至！10種類振動パターン×強弱5段階;静音設計·丸洗い可能【2899円】')" />
+		<img src="https://www.dropbox.com/s/i83mhbtn7rlj2vr/20.jpg?raw=1" onclick="openModal('無線リモコン式ローター；パワー・静音性・質感も素晴らしい優良品；柔らかいシリコン材料【2980円】')" />
+		<img src="https://www.dropbox.com/s/ej6qj12bfkmu8b1/21.jpg?raw=1" onclick="openModal('一点集中刺激·昇天必至！10種類振動パターン×強弱5段階;静音設計·丸洗い可能【2999円】')" />
+		<img src="https://www.dropbox.com/s/ig3uiofu24c87to/22.jpg?raw=1" onclick="openModal('吸引バイブ*スマート加熱；吸引＆振動・10種類振動＋3種類吸引；柔らかい素材＊生活防水【3980】')" />
+		<img src="https://www.dropbox.com/s/ynmyhh7epaxgydc/23.jpg?raw=1" onclick="openModal('リモコン付き・遠隔操作「10m以内」；3種類の吸引モード＋7種類の振動モード【4530円】')" />
+		<img src="https://www.dropbox.com/s/w3qgf8yg9tmon7j/24.jpg?raw=1" onclick="openModal('スマホ操作；イキまくる絶頂知能ローター+ ぐちゃぐちゃまで二点同時責め【4680円】')" />
+		<img src="https://www.dropbox.com/s/wu62uplbtytuya2/25.jpg?raw=1" onclick="openModal('スマホアプリ操作＋吸引＋振動＋ずっしり肉厚；ずっしり重さ＊吸引振動；内部はプチプチしたイボとヒダの連続構造になり、包み込み、締め付け、うねりなどを忠実に再現【9480円】')" />
+		<img src="https://www.dropbox.com/s/m5fi53b949azl75/26.jpg?raw=1" onclick="openModal('多彩な振動モード+無極変速+加熱モード+39℃加熱機能搭載；1分間6800rpmの強力モーター内蔵+1200mAhの大容量バッテリ【2880円】')" />
+		<img src="https://www.dropbox.com/s/kldypw572e29cal/27.jpg?raw=1" onclick="openModal('一点集中刺激·昇天必至！10種類振動パターン＆5段階強弱調節；静音設計·丸洗い可能【2999円】')" />
+		<img src="https://www.dropbox.com/s/jteswlyuq47mchx/28.jpg?raw=1" onclick="openModal('7種類伸縮振動+10種類吸引、敏感深部に激しく衝撃！【2990円】')" />
+		<img src="https://www.dropbox.com/s/12dfbz1vhiki2q2/29.jpg?raw=1" onclick="openModal('ゴールドフィンガー頼り+10種叩く+10種振動+2点攻め；高品質シリコーン素材+防水仕様；超静音デザイン+USB磁気吸着充電【2280円')" />
+	</div>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<textarea id="modal-text" rows="10" cols="50"></textarea>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function openModal(imgNum) {
+			var modal = document.getElementById("myModal");
+			var modalText = document.getElementById("modal-text");
+			modal.style.display = "block";
+			modalText.value = "商品の情報：" + imgNum ;
+		}
+
+		function closeModal() {
+			var modal = document.getElementById("myModal");
+			modal.style.display = "none";
+		}
+	</script>
+</body>
+</html>
